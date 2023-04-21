@@ -1,4 +1,4 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+**!! Atenção: Renomeie o seu repositório para (Tema)_(Metro). !!** 
 
 Temas:
  - Grafos1
