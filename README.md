@@ -20,8 +20,8 @@ Temas:
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0086971  |  Felipe Direito Corrieri de Macedo |
+| 19/0094486  |  Pedro Henrique Nogueira Gonçalves |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
