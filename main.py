@@ -8,7 +8,7 @@ janela.resizable(height=False, width=False)
 
 
 mapa =  Image.open("assets/BRTBrasilia.png")
-icon_no = Image.open("assets/botaoquadrado.png")
+icon_no = Image.open("assets/square.png")
 
 canvas = Canvas(janela, width=1280, height=720)
 canvas.pack()
