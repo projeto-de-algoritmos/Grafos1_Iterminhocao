@@ -1,5 +1,11 @@
 from tkinter import *
 from PIL import Image, ImageTk
+from funcoes import *
+
+
+
+#teste(); 
+
 
 janela = Tk()
 janela.geometry("1280x720")
@@ -14,6 +20,7 @@ img_no_selecionado = Image.open("assets/greensquare.png")
 canvas = Canvas(janela, width=1280, height=720)
 canvas.pack()
 
+
 resized_image = mapa.resize((1280,720), Image.ANTIALIAS)
 new_image = ImageTk.PhotoImage(resized_image)
 
@@ -24,27 +31,30 @@ btn_no = ImageTk.PhotoImage(resized_btn)
 
 resized_green_btn = img_no_selecionado.resize((30,30))
 btn_select = ImageTk.PhotoImage(resized_green_btn)
-
+x = canvas.create_line(710,340,640,480, fill="red", width=4)
 nos = []
 
-def noA():
+def noA(z, k):
     print("A")
-    botaoA.config(image=btn_select)
+    
+    k.config(image=btn_select)
     if 'A' in nos:
-        botaoA.config(image=btn_no)
+        k.config(image=btn_no)
         nos.remove('A')
+        x = canvas.create_line(710,340,640,480, fill="red", width=4)
     else:
         nos.append('A')
+        x = canvas.create_line(710,340,640,480, fill="green", width=4)
 
 def noB():
     print("B")
     print(nos)  
 
-botaoA = Button(janela, image=btn_no,command=noA, bd=0, highlightthickness=0)
+botaoA = Button(janela, image=btn_no,command=lambda: noA(x, botaoA), bd=0, highlightthickness=0)
 botaoA.pack()
 botaoA.place(x=208,y=430, anchor=NW)
 
-botaoB = Button(janela, image=btn_no,command=noB, bd=0, highlightthickness=0)
+botaoB = Button(janela, image=btn_no,command=lambda: noA(x, botaoB), bd=0, highlightthickness=0)
 botaoB.pack()
 botaoB.place(x=840,y=490, anchor=NW)
 
