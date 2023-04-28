@@ -1,5 +1,6 @@
 from queue import Queue
 
+
 graph = {
       "A" : ["B","C"],
       "B" : ["A","C","D"],
