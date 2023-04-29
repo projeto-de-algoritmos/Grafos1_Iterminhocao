@@ -64,7 +64,7 @@ def bfs(graph, inicial, final):
         path.append(f)
         f = parent[f]
     path.reverse()
-    print(path)
+    print('menor caminho',path)
     return path
 
 
