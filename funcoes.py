@@ -2,7 +2,7 @@ from queue import Queue
 
 
 graph = {
-      "A" : ["B","C"],
+      "A" : ["B","C","D"],
       "B" : ["A","C","D"],
       "C" : ["A","B","E"],
       "D" : ["A","B","F"],
@@ -56,7 +56,7 @@ def bfs(graph, inicial, final):
                 parent[v] = u
                 level[v] = level[u]+1
                 queue.put(v)
-    print(bfs_transversal_output)
+    print("bfs",bfs_transversal_output)
     
     f = final 
     path = []
@@ -65,5 +65,6 @@ def bfs(graph, inicial, final):
         f = parent[f]
     path.reverse()
     print(path)
+    return path
 
-bfs(graph, "C", "A")
+
