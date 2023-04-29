@@ -15,7 +15,7 @@ janela.resizable(height=False, width=False)
 
 
 
-mapa =  Image.open("assets/UnBMap.jpg")
+mapa =  Image.open("assets/UnBMap2.png")
 img_no = Image.open("assets/square.png")
 img_no_selecionado = Image.open("assets/greensquare.png")
 
