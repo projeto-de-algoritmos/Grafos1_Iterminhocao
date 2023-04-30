@@ -2,19 +2,19 @@ from queue import Queue
 
 
 graph = {
-      "A" : ["B","C","D"],
+      "A" : ["B","C","D","F"],
       "B" : ["A","C","D"],
       "C" : ["A","B","E"],
-      "D" : ["A","B","F"],
+      "D" : ["A","B","F","H"],
       "E" : ["C","G"],
-      "F" : ["D","H"],
+      "F" : ["A","D","H","I"],
       "G" : ["E","I","H"],
-      "H" : ["G","F"],
-      "I" : ["G"]
+      "H" : ["D","F","G"],
+      "I" : ["F","G"]
  }
 #
 #visited = []
-#queue = [] 
+#queue = []
 
 #def bfs(visited, graph, node):
  #   visited.append(node)
@@ -36,7 +36,7 @@ def bfs(graph, inicial, final):
     parent = {}
     bfs_transversal_output = []
     queue = Queue()
-    
+
     for no in graph.keys():
         visited[no] = False
         parent[no] = None
@@ -57,14 +57,12 @@ def bfs(graph, inicial, final):
                 level[v] = level[u]+1
                 queue.put(v)
     print("bfs",bfs_transversal_output)
-    
-    f = final 
+
+    f = final
     path = []
-    while f is not None: 
+    while f is not None:
         path.append(f)
         f = parent[f]
     path.reverse()
     print('menor caminho',path)
     return path
-
-

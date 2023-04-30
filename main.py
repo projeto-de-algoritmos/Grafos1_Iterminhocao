@@ -16,7 +16,7 @@ texto = Text(janela)
 
 
 
-mapa =  Image.open("assets/UnbMap2.png")
+mapa =  Image.open("assets/UnBgrafo.png")
 img_no = Image.open("assets/square.png")
 img_no_selecionado = Image.open("assets/greensquare.png")
 
@@ -114,7 +114,7 @@ botaoA.place(x=430,y=450, anchor=NW)
 
 botaoB = Button(janela, image=btn_no,command=lambda: addNo('B'), bd=0, highlightthickness=0)
 botaoB.pack()
-botaoB.place(x=310,y=480, anchor=NW)
+botaoB.place(x=325,y=480, anchor=NW)
 
 botaoC = Button(janela, image=btn_no,command=lambda: addNo('C'), bd=0, highlightthickness=0)
 botaoC.pack()
@@ -130,7 +130,7 @@ botaoE.place(x=700,y=120, anchor=NW)
 
 botaoF = Button(janela, image=btn_no,command=lambda: addNo('F'), bd=0, highlightthickness=0)
 botaoF.pack()
-botaoF.place(x=890,y=560, anchor=NW)
+botaoF.place(x=725,y=335, anchor=NW)
 
 botaoG = Button(janela, image=btn_no,command=lambda: addNo('G'), bd=0, highlightthickness=0)
 botaoG.pack()
