@@ -41,4 +41,4 @@ python3 main.py
 
 ## Video de Apresentação
 
-[Aperte aqui](https://drive.google.com/file/d/1eAyRhYoxYElvKY1hENoxyI7EVXoEGqH0/view)
+[Aperte aqui.](https://drive.google.com/file/d/1eAyRhYoxYElvKY1hENoxyI7EVXoEGqH0/view)
